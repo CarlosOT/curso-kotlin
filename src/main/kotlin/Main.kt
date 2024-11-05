@@ -12,7 +12,10 @@ fun main() {
 
     /*já quando declaro a variável como 'val' o valor é imutável, não posso fazer reatribuição*/
     val novoResultado = 10+30;
-    println(novoResultado);
+    println(novoResultado::class); // para saber o tipo de dado armazenado basta usar '::class'
     //novoResultado = 20; (vai dar erro)
+
+    val nome = "Carlos";
+    println(nome::class);
 
 }
