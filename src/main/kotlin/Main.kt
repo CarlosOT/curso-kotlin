@@ -1,7 +1,6 @@
 fun main() {
-    println("Testanto o Build")
-}
-
-fun login(){
-
+    var nome = "Carlos";
+    println(nome);
+    nome = "Ingrid";
+    print(nome);
 }
