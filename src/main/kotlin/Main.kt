@@ -1,26 +1,15 @@
 fun main() {
-    // é assim que se comenta no kotlin
-    /*é a mesma coisa que
-    no javascript*/
+    val nome = "Carlos"
+    val idade = 28
+    val primeiraLetra: Char = nome[0]
+    val altura = 1.69f
+    val peso = 68
+    val programador = true
 
-    /*consigo reatribuir o valor na variável que declaro como 'var'*/
-    var resultado: Int = 10 + 1;
-    println(resultado);
-    resultado = 10+10;
-    println(resultado);
-    println("")
-
-    /*já quando declaro a variável como 'val' o valor é imutável, não posso fazer reatribuição*/
-    val novoResultado: Int = 10+30;
-    println(novoResultado::class); // para saber o tipo de dado armazenado basta usar '::class'
-    //novoResultado = 20; (vai dar erro)
-    println("")
-
-    val nome: String = "Carlos"; //tipo explícito
-    println(nome::class);
-    println("")
-
-    val sobrenome = "Teixeira"; //tipo inferido
-    println(sobrenome::class);
-
+    println(nome)
+    println(idade)
+    println(primeiraLetra)
+    println(altura)
+    println(peso)
+    println(programador)
 }
