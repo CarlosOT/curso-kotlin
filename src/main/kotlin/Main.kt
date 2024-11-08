@@ -1,4 +1,5 @@
 fun main() {
-    val texto: String = "2";
-    print(texto);
+    val nome: String = "Carlos";
+    print(nome.length);
+    print(nome.uppercase());
 }
