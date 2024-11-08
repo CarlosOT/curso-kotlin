@@ -3,5 +3,11 @@ fun main() {
         Olá, Carlos!
         Seu produto chegou...
         """.trimIndent();
-    print(texto);
+    println(texto);
+
+    val csv = """
+        texto1,
+        texto2
+        """.replaceIndent(newIndent = ";");
+    println(csv);
 }
