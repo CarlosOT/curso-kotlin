@@ -1,13 +1,5 @@
 fun main() {
-    val texto = """
-        Olá, Carlos!
-        Seu produto chegou...
-        """.trimIndent();
-    println(texto);
-
-    val csv = """
-        texto1,
-        texto2
-        """.replaceIndent(newIndent = ";");
-    println(csv);
+    val nome: String = "Carlos";
+    val sobrenome: String = "Teixeira";
+    print("Seja bem vindo $nome $sobrenome");
 }
