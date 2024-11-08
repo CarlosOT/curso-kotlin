@@ -1,6 +1,4 @@
 fun main() {
-    val precoProduto: Long = 1_200_000_000;
-    println(precoProduto :: class);
-    println(precoProduto);
-
+    val preco: Double = 1_200.00;
+    println(preco);
 }
