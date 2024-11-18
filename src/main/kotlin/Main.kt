@@ -1,8 +1,5 @@
 fun main() {
-    val produto = "Ip";
-    if(produto.length < 3){
-        print("Produto não pode ser cadastrado");
-    }else{
-        print("Produto pode ser cadastrado")
-    }
+    print("Primeiro Nome:"); val nome = readln();
+    print("Segundo Nome: "); val sobrenome = readln();
+    print("Nome Completo: ${nome + " " + sobrenome}");
 }
