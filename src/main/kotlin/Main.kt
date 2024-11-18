@@ -1,6 +1,8 @@
 fun main() {
-    val nome: String = "Carlos";
-    val sobrenome: String = "Teixeira";
-    val idade: Int = 0;
-    print("Seja bem vindo $nome $sobrenome sabemos que a sua idade é ${idade + 28}");
+    val produto = "Ip";
+    if(produto.length < 3){
+        print("Produto não pode ser cadastrado");
+    }else{
+        print("Produto pode ser cadastrado")
+    }
 }
