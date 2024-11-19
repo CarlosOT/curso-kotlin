@@ -1,12 +1,8 @@
 fun main() {
-    var testPrograma = false;
+    var endereco: String? = "Rua A";
 
-     while(testPrograma == false){
-         print("Teste: ");
-         val limite = readln().toInt();
-         for(i in 0 until limite){
-             println(i);
-         }
-         testPrograma = true;
-        }
+    if(endereco != null){
+        val qtdeCaracteres = endereco.length;
+        print(qtdeCaracteres);
+    }
 }
