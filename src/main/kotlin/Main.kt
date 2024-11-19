@@ -1,8 +1,5 @@
-fun main() {
-    val resposta = somar(3,5);
-    print(resposta);
+fun main(){
+    olaMundo();
 }
 
-fun somar(n1:Int, n2:Int): Int{
-    return n1 + n2;
-}
+fun olaMundo() = print("Olá mundo");
