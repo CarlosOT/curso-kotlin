@@ -1,5 +1,5 @@
 fun main(){
-    olaMundo();
+    olaMundo(txt = "Olá Mundo");
 }
 
-fun olaMundo() = print("Olá mundo");
+fun olaMundo(txt : String) = print(txt);
