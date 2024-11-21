@@ -1,24 +1,20 @@
 fun main(){
-    val userA = Usuario();
-    val userB = Usuario();
+    val userA = User();
 
-    userA.nome = "Carlos";
-    userB.nome = "Ingrid";
-
-    userA.inprimeMaiusculo();
-    val getNomeUserB = userB.getNomeMaiusculo();
-    println(getNomeUserB);
+    userA.name = "Carlos";
+    userA.printUpperCase();
+    userA.upadteName("Charles");
+    userA.printUpperCase();
 }
 
-class Usuario{
-    var nome: String = "";
+class User{
+    var name: String = "";
 
-    fun inprimeMaiusculo(){
-        println(("Olá " + nome).uppercase());
+    fun printUpperCase(){
+        println(("Olá " + name).uppercase());
     }
 
-    fun getNomeMaiusculo() : String{
-        return nome.uppercase();
+    fun upadteName(newName:String){
+        name = newName;
     }
-
 }
