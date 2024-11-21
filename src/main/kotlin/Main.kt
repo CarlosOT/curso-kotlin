@@ -1,5 +1,19 @@
 fun main(){
-    olaMundo(txt = "Olá Mundo");
+    val userA = Usuario();
+    val userB = Usuario();
+
+    userA.nome = "Carlos";
+    userB.nome = "Ingrid";
+
+    userA.inprimeMaiusculo();
+    userB.inprimeMaiusculo();
 }
 
-fun olaMundo(txt : String) = print(txt);
+class Usuario{
+    var nome: String = "";
+
+    fun inprimeMaiusculo(){
+        println(("Olá " + nome).uppercase());
+    }
+
+}
