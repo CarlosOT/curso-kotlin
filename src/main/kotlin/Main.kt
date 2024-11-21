@@ -6,7 +6,8 @@ fun main(){
     userB.nome = "Ingrid";
 
     userA.inprimeMaiusculo();
-    userB.inprimeMaiusculo();
+    val getNomeUserB = userB.getNomeMaiusculo();
+    println(getNomeUserB);
 }
 
 class Usuario{
@@ -14,6 +15,10 @@ class Usuario{
 
     fun inprimeMaiusculo(){
         println(("Olá " + nome).uppercase());
+    }
+
+    fun getNomeMaiusculo() : String{
+        return nome.uppercase();
     }
 
 }
