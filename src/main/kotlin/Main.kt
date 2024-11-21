@@ -11,10 +11,10 @@ class User{
     var name: String = "";
 
     fun printUpperCase(){
-        println(("Olá " + name).uppercase());
+        println(name.uppercase());
     }
 
     fun upadteName(newName:String){
-        name = newName;
+        name = "$newName [atualizado com sucesso]";
     }
 }
