@@ -1,16 +1,9 @@
 class User{
-    var name: String = "";
-    var cpf: CPF = CPF();
+    var name:String = "";
+    var password:String = "";
 
-    fun printUpperCase(){
-        println(name.uppercase());
-    }
-
-    fun upadteName(newName:String){
-        name = "$newName [atualizado com sucesso]";
-    }
-
-    fun getNameLength() : Int{
-        return name.length;
+    fun updatePassword(initialValue: String){
+        val numberPositive = Math.abs(initialValue.hashCode());
+        password = numberPositive.toString();
     }
 }

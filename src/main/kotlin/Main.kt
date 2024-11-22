@@ -1,14 +1,12 @@
 fun main(){
-    val userA = User();
+    val user1 = User();
+    user1.name = "Carlos";
+    user1.password = "123";
+    println(user1.name);
+    println(user1.password);
 
-    userA.name = "Carlos";
-    userA.printUpperCase();
-    var nameLength = userA.getNameLength();
-    println("Seu nome ${userA.name} tem $nameLength caracteres");
+    user1.updatePassword(user1.name);
+    println(user1.password);
 
-    userA.upadteName("Charles");
-    userA.printUpperCase();
-    nameLength = userA.getNameLength();
-    println("Seu nome ${userA.name} tem $nameLength caracteres");
 }
 
