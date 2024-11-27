@@ -4,6 +4,7 @@
 class PlayerDeVideo(private var volume: Int){
 
     companion object{
+        private const val MAX_NAME_LENGTH = 8;
         var count = 0;
 
         /**
