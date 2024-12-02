@@ -3,6 +3,8 @@
  * */
 class User(private var name: String, private var isAdmin: Boolean){
 
+    lateinit var lastName: String;
+
     companion object{
         const val MAX_NAME_LENGTH = 8;
     }
@@ -18,6 +20,7 @@ class User(private var name: String, private var isAdmin: Boolean){
         println("execute o construtor 3");
     }
 
+    fun output() = println("Nome: $name $lastName \nAdmin: $isAdmin");
 
     public fun setName(newName: String){
         name = newName;
