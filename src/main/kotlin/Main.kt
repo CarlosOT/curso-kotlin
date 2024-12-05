@@ -1,6 +1,7 @@
 fun main(){
     val userA = dataUser("Carlos", true);
-    val userB = userA.copy();
+    val userB = userA.copy(isAdmin = false);
+    println(userA);
     println(userB);
 
 }
